@@ -46,7 +46,7 @@ module.exports = {
         nav: [
           { text: 'home', link: '/'},
           { text: 'layout', items: [
-            { text: 'HTML', link: '/layout/'},
+            { text: 'HTML', link: '/page/'},
             { text: 'CSS', link: '/css/'},
             { text: 'SCSS/SASS', link: '/css-scss/'},
           ]},
@@ -68,7 +68,7 @@ module.exports = {
         nav: [
           { text: '主页', link: '/'},
           { text: '布局', items: [
-            { text: 'HTML', link: '/layout/'},
+            { text: 'HTML', link: '/page/'},
             { text: 'CSS', link: '/css/'},
             { text: 'SASS', link: '/css-scss/'},
           ]},
