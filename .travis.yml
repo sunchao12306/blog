@@ -1,30 +1,25 @@
 language: node_js
-node_js: 
+node_js:
   - "lts/*"
 branches:
   only:
   - master
-
-cache: 
+cache:
   directories:
   - node_modules
-  npm: true
-
+  yarn: true
 before_install:
-  - export TZ='Asis/Shanghai'
-
-install: 
-  - npm 
-
-scripts: 
-  - npm run build
-
-deploy: 
+- export TZ='Asia/Shanghai'  # 设置时区
+install:
+- yarn
+script:
+- yarn blog:build
+deploy:
   provider: pages
   skip-cleanup: true
   github-token: 0cc7f01ed45b1f733775037496f18d6bc67adfd7
-  local-dir: .vuepress/dist/
+  local-dir: ./sources/.vuepress/dist/ ## 根据情况自定义到静态文件输出目录
   target-branch: gh-pages
   verbose: true
-  on: 
+  on:
     branch: master
