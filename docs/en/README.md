@@ -1,17 +1,17 @@
 ---
 lang: en-US
 home: true
-heroImage: /avaturl.jpeg
-heroText: 只沾花不惹草的博客
-tagline: 不折腾的前端和咸鱼有什么区别
-actionText: 进入主页 →
-actionLink: /en/html/
+heroImage: /img/avaturl.jpeg
+heroText: Stay in the flowers and not in the grass
+tagline: a non-tossing front is a salted fish
+actionText: start now →
+actionLink: /en/dom/
 features:
-- title: 简洁清晰
-  details: 以 vuepress 为中心的项目结构，配置少而文章清晰。
-- title: 折腾至上
-  details: 享受 折腾 的乐趣，折腾起来利己也利人。
-- title: 分享交流
-  details: 记录自己的心得及问题，共同交流完善，携手并进。
+- title: Concise and clear
+  details: The project structure centered on vuepress has fewer configurations and clearer articles.
+- title: Toss up
+  details: Enjoy the pleasure of tossing, tossing up self-interest and self-interest.
+- title: Sharing communication
+  details: Record your own experience and problems, exchange and improve together, and work hand in hand.
 footer: Copyright © 2019-present Dong Bu Si
 ---

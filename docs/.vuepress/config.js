@@ -44,15 +44,16 @@ module.exports = {
           }
         },
         nav: [
+          { text: 'blog', link: 'http://www.nantiewang.cn'},
           { text: 'home', link: '/'},
           { text: 'layout', items: [
-            { text: 'HTML', link: '/page/'},
-            { text: 'CSS', link: '/css/'},
-            { text: 'SCSS/SASS', link: '/css-scss/'},
+            { text: 'HTML', link: '/en/dom/'},
+            { text: 'CSS', link: '/en/css/'},
+            { text: 'SCSS/SASS', link: '/en/css-scss/'},
           ]},
         ],
         sidebar: 'auto',
-        lastUpdated: 'Last Updated'
+        lastUpdated: 'Last Updated',
       },
       '/': {
         selectText: '选择语言',
@@ -66,9 +67,10 @@ module.exports = {
           }
         },
         nav: [
+          { text: '博客', link: 'http://www.nantiewang.cn'},
           { text: '主页', link: '/'},
           { text: '布局', items: [
-            { text: 'HTML', link: '/page/'},
+            { text: 'HTML', link: '/dom/'},
             { text: 'CSS', link: '/css/'},
             { text: 'SASS', link: '/css-scss/'},
           ]},
