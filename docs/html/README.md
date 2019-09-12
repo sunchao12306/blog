@@ -1,6 +1,6 @@
 ---
 title: HTML
-next: auto
+next: input
 prev: false
 ---
 
