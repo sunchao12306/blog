@@ -1,3 +1,4 @@
+
 module.exports = {
   base: '/blog/',
   head: [],
@@ -21,11 +22,6 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
-  cofigureWebpack: {
-    alias: {
-      '@static': '/.vuepress/public'
-    }
-  },
   themeConfig: {
     searchMaxSuggestions: 5,
     repo: 'https://github.com/dongbusi/blog',
@@ -35,6 +31,7 @@ module.exports = {
     docsRepo: 'https://github.com/dongbusi/blog',
     docsDir: 'docs',
     docsBranch: 'master',
+    sidebarDepth: 2,
     locales: {
       '/en/': {
         selectText: 'Languages',
@@ -49,9 +46,9 @@ module.exports = {
         nav: [
           { text: 'home', link: '/'},
           { text: 'layout', items: [
-            { text: 'HTML', link: '/html/'},
+            { text: 'HTML', link: '/label-html/'},
             { text: 'CSS', link: '/css/'},
-            { text: 'SCSS/SASS', link: '/sass/'},
+            { text: 'SCSS/SASS', link: '/css-scss/'},
           ]},
         ],
         sidebar: 'auto',
@@ -71,9 +68,9 @@ module.exports = {
         nav: [
           { text: '主页', link: '/'},
           { text: '布局', items: [
-            { text: 'HTML', link: '/html/'},
+            { text: 'HTML', link: '/label-html/'},
             { text: 'CSS', link: '/css/'},
-            { text: 'SCSS/SASS', link: '/sass/'},
+            { text: 'SASS', link: '/css-scss/'},
           ]},
         ],
         sidebar: 'auto',
@@ -82,6 +79,17 @@ module.exports = {
     }
   },
   plugins: [
-    '@vuepress/back-to-top'
+    '@vuepress/back-to-top',
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          // 不要忘了安装 moment
+          const moment = require('moment')
+          moment.locale(lang)
+          return moment(timestamp).format('lll')
+        }
+      }
+    ]
   ]
 }
