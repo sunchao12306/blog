@@ -22,7 +22,7 @@ scripts:
 deploy: 
   provider: pages
   skip-cleanup: true
-  github-token: 
+  github-token: 0cc7f01ed45b1f733775037496f18d6bc67adfd7
   local-dir: .vuepress/dist/
   target-branch: gh-pages
   verbose: true
