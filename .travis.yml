@@ -11,7 +11,7 @@ before_install:
 - export TZ='Asia/Shanghai'  # 设置时区
 
 script:
-- npm build
+- npm run build
 deploy:
   provider: pages
   skip-cleanup: true
