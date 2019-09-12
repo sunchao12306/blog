@@ -7,5 +7,5 @@ export default ({
   router,
   route
 }) => {
-  console.log(router)
+  
 }
