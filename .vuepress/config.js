@@ -5,7 +5,6 @@ module.exports = {
   extraWatchFiles: [ // 额外监听文件
     '/README.md'
   ],
-  dest: './dist',
   locales: {
     '/': {
       lang: 'zh-CN',
