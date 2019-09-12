@@ -31,8 +31,10 @@ module.exports = {
     repo: 'https://github.com/dongbusi/blog',
     repoLabel: 'Github',
     editLinks: true,
-    lastUpdated: '最后更新时间',
     displayAllHeaders: true,
+    docsRepo: 'https://github.com/dongbusi/blog',
+    docsDir: 'docs',
+    docsBranch: 'master',
     locales: {
       '/en/': {
         selectText: 'Languages',
@@ -51,7 +53,9 @@ module.exports = {
             { text: 'CSS', link: '/css/'},
             { text: 'SCSS/SASS', link: '/sass/'},
           ]},
-        ]
+        ],
+        sidebar: 'auto',
+        lastUpdated: 'Last Updated'
       },
       '/': {
         selectText: '选择语言',
@@ -72,8 +76,12 @@ module.exports = {
             { text: 'SCSS/SASS', link: '/sass/'},
           ]},
         ],
-        sidebar: 'auto'
+        sidebar: 'auto',
+        lastUpdated: '最后更新时间',
       }
     }
-  }
+  },
+  plugins: [
+    '@vuepress/back-to-top'
+  ]
 }

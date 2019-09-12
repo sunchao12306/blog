@@ -1,7 +1,6 @@
 ---
 title: HTML
-
-next: input
+next: auto
 prev: false
 ---
 
