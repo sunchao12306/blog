@@ -19,5 +19,6 @@ deploy:
   local-dir: ./docs/.vuepress/dist/ ## 根据情况自定义到静态文件输出目录
   target-branch: gh-pages
   verbose: true
+  committer_from_gh: true
   on:
     branch: master
